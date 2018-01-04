@@ -264,32 +264,26 @@ a:hover{
     /* color:#3AFFB2 !important; */
     color:${allColor[name].font_color_14} !important;
 }
-.ant-calendar-header .ant-calendar-century-select,
-.ant-calendar-header .ant-calendar-decade-select,
-.ant-calendar-header .ant-calendar-month-select, 
-.ant-calendar-header .ant-calendar-year-select, 
-.ant-calendar-header .ant-calendar-prev-century-btn,
-.ant-calendar-header .ant-calendar-next-century-btn, 
-.ant-calendar-header .ant-calendar-prev-decade-btn, 
-.ant-calendar-header .ant-calendar-next-decade-btn,
-.ant-calendar-header .ant-calendar-prev-month-btn, 
-.ant-calendar-header .ant-calendar-next-month-btn, 
-.ant-calendar-header .ant-calendar-prev-year-btn, 
-.ant-calendar-header .ant-calendar-next-year-btn,
-/*.ant-calendar-table tr:hover,*/
-.ant-calendar-input,.ant-calendar-column-header-inner,
-.ant-calendar-date{
+.ant-calendar-header a{
     color:${allColor[name].font_color_11} !important;
 }
-.ant-calendar-header a:hover,.ant-calendar-today .ant-calendar-date{
-    /* color:#3BFFB3 !important; */
+.ant-calendar-column-header span{
+    color:${allColor[name].font_color_10} !important;
 }
-.ant-calendar-table tr,.ant-calendar-table thead{
-    
+.ant-calendar-cell .ant-calendar-date{
+    color:${allColor[name].font_color_11};
 }
-.ant-calendar-last-month-cell .ant-calendar-date, .ant-calendar-next-month-btn-day .ant-calendar-date{
-    /* color:#6A6A6A !important; */
+.ant-calendar-disabled-cell .ant-calendar-date{
+    color:${allColor[name].font_color_6} !important;
+    background-color:${allColor[name].bg_color_6} !important;
 }
+.ant-calendar-today .ant-calendar-date{
+    color:${allColor[name].font_color_14} !important;
+    border-color:${allColor[name].border_color_3}  !important;
+}
+
+
+
 .ant-calendar-selected-day .ant-calendar-date,div.ant-calendar-date[aria-selected="true"]:hover{
     background-color:${allColor[name].bg_color_7} !important;
     /*color:${allColor[name].bg_color_7} !important; */
@@ -299,14 +293,8 @@ a:hover{
     /* background-color:transparent !important; */
     /* border-color:#3BFFB3; */
 }
-.ant-calendar-today .ant-calendar-date{
-    /* border-color: transparent !important; */
-}
-.ant-calendar-disabled-cell .ant-calendar-date{
-    background-color:${allColor[name].bg_color_6} !important;
-    /* background-color : #161718 !important; */
-    /* color: rgba(255,255,255,.2) !important; */
-}
+
+
 
 
 

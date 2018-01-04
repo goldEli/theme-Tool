@@ -83,6 +83,16 @@
     background:rgba(35,35,35,1);
     box-shadow: 0px 0px 4px 0px #11744E, 0px 0px 4px 0px #000, 0px 0px 1px 2px #000 inset;
 }
+.bg_color_41{
+    background:rgba(0,0,0,0);
+}
+.bg_color_42:hover{
+    background:rgba(68,170,118,1);
+}
+.bg_color_43{
+    background:rgba(35,35,35,1);
+    box-shadow: 0px 0px 4px 0px #11744E;
+}
 .bg_color_25{
     background:rgba(0,0,0,0);
 }
@@ -173,6 +183,9 @@
 }
 .border_color_13{
     border-color:rgba(204,204,204,0.1);
+}
+.border_color_16{
+    border-color:rgba(68,170,118,1);
 }
 .border_color_14{
     border-color:rgba(68,170,118,1);
@@ -442,32 +455,26 @@ a:hover{
     /* color:#3AFFB2 !important; */
     color:rgba(59,252,178,1) !important;
 }
-.ant-calendar-header .ant-calendar-century-select,
-.ant-calendar-header .ant-calendar-decade-select,
-.ant-calendar-header .ant-calendar-month-select, 
-.ant-calendar-header .ant-calendar-year-select, 
-.ant-calendar-header .ant-calendar-prev-century-btn,
-.ant-calendar-header .ant-calendar-next-century-btn, 
-.ant-calendar-header .ant-calendar-prev-decade-btn, 
-.ant-calendar-header .ant-calendar-next-decade-btn,
-.ant-calendar-header .ant-calendar-prev-month-btn, 
-.ant-calendar-header .ant-calendar-next-month-btn, 
-.ant-calendar-header .ant-calendar-prev-year-btn, 
-.ant-calendar-header .ant-calendar-next-year-btn,
-/*.ant-calendar-table tr:hover,*/
-.ant-calendar-input,.ant-calendar-column-header-inner,
-.ant-calendar-date{
+.ant-calendar-header a{
     color:rgba(153,153,153,1) !important;
 }
-.ant-calendar-header a:hover,.ant-calendar-today .ant-calendar-date{
-    /* color:#3BFFB3 !important; */
+.ant-calendar-column-header span{
+    color:rgba(255,255,255,1) !important;
 }
-.ant-calendar-table tr,.ant-calendar-table thead{
-    
+.ant-calendar-cell .ant-calendar-date{
+    color:rgba(153,153,153,1);
 }
-.ant-calendar-last-month-cell .ant-calendar-date, .ant-calendar-next-month-btn-day .ant-calendar-date{
-    /* color:#6A6A6A !important; */
+.ant-calendar-disabled-cell .ant-calendar-date{
+    color:rgba(102,102,102,1) !important;
+    background-color:rgba(0,0,0,0) !important;
 }
+.ant-calendar-today .ant-calendar-date{
+    color:rgba(59,252,178,1) !important;
+    border-color:rgba(35,35,35,1)  !important;
+}
+
+
+
 .ant-calendar-selected-day .ant-calendar-date,div.ant-calendar-date[aria-selected="true"]:hover{
     background-color:rgba(17,116,78,1) !important;
     /*color:rgba(17,116,78,1) !important; */
@@ -477,14 +484,8 @@ a:hover{
     /* background-color:transparent !important; */
     /* border-color:#3BFFB3; */
 }
-.ant-calendar-today .ant-calendar-date{
-    /* border-color: transparent !important; */
-}
-.ant-calendar-disabled-cell .ant-calendar-date{
-    background-color:rgba(0,0,0,0) !important;
-    /* background-color : #161718 !important; */
-    /* color: rgba(255,255,255,.2) !important; */
-}
+
+
 
 
 
