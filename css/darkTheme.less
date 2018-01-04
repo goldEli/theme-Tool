@@ -86,7 +86,7 @@
 .bg_color_41{
     background:rgba(0,0,0,0);
 }
-.bg_color_42:hover{
+.bg_color_41:hover{
     background:rgba(68,170,118,1);
 }
 .bg_color_43{
@@ -304,14 +304,33 @@
 .font_color_20{
     color:rgba(68,170,118,1);
 }
-/*覆盖antdesignCss*/
 
 /*********************************/
 
-/*覆盖antDesign样式*/
+/*覆盖第三方插件样式*/
+/*右键**********************************/
+.react-contextmenu-item:hover div{
+    color:rgba(255,255,255,1)!important;
+}
+
+/*antdesign****************************/
 a:hover{
     color:rgba(255,255,255,1)!important;
 }
+
+/*porpver prompt 提示框*/
+.confirm_box .ant-popover-inner{
+    background-color:rgba(45,45,45,1) !important; /*co_bg_rightclick_dialog*/
+    
+}
+.confirm_box .ant-popover-message{
+
+    color:rgba(153,153,153,1) !important;/*co_font_modal_content*/
+}
+.confirm_box .ant-popover-inner-content{
+    color:rgba(153,153,153,1)!important;
+}
+
 
 /*表格*/
 .ant-table-thead{
@@ -548,9 +567,9 @@ a:hover{
 .ant-select-dropdown-menu-item:hover,
 .ant-select-dropdown-menu-item-selected,
 .ant-select-dropdown-menu-item-active{
-    /* border-radius: 2px; */
-    background:rgba(0,0,0,0)!important;
-    /* color:#FFFFFF !important; */
+    border-radius: 2px; 
+    background:rgba(68,170,118,1)!important;
+    color:rgba(255,255,255,1)!important;
 }
 .ant-select-selection__placeholder,
 .ant-select-search__field__placeholder{

@@ -36,7 +36,7 @@ var light = {
     bg_color_23:"rgba(204,204,204,1)",
     bg_color_24:"rgba(237,237,237,1)",
     bg_color_41:"rgba(0,0,0,0)",
-    bg_color_42_hover:"rgba(68,170,118,1)",
+    bg_color_41_hover:"rgba(68,170,118,1)",
     bg_color_43:"rgba(237,237,237,1)",
     bg_color_25:"rgba(0,0,0,0)",
     bg_color_26:"rgba(0,0,0,0.05)",
@@ -106,6 +106,7 @@ var light = {
     font_color_18:"rgba(102,102,102,1)",
     font_color_18_hover:"rgba(255,255,255,1)",
     font_color_20:"rgba(68,170,118,0.5)",
+    aceTheme_color_1:"rgba(twilight)",
 }
 // 黑色
 var dark = {
@@ -136,7 +137,7 @@ var dark = {
     bg_color_23:"rgba(35,35,35,1)",
     bg_color_24:"rgba(35,35,35,1)",
     bg_color_41:"rgba(0,0,0,0)",
-    bg_color_42_hover:"rgba(68,170,118,1)",
+    bg_color_41_hover:"rgba(68,170,118,1)",
     bg_color_43:"rgba(35,35,35,1)",
     bg_color_25:"rgba(0,0,0,0)",
     bg_color_26:"rgba(0,0,0,0.1)",
@@ -206,6 +207,7 @@ var dark = {
     font_color_18:"rgba(153,153,153,1)",
     font_color_18_hover:"rgba(255,255,255,1)",
     font_color_20:"rgba(68,170,118,1)",
+    aceTheme_color_1:"rgba(clouds_midnight)",
 }
 
 

@@ -82,6 +82,10 @@ function createCssFile(name, file) {
         let color = element['RGBA_' + name]
         let style =  element['style_' + name]
         let key = null
+
+        if (classname.indexOf('Theme') !== -1) {
+            return
+        }
         
         if (element.Notes.indexOf("悬停") !== -1) {
             str += '.' + classname + ':hover{\n'
@@ -113,14 +117,34 @@ function createCssFile(name, file) {
         str += '}\n'
     })
 
-    str += "/*覆盖antdesignCss*/" + '\n'
+
     str += `
 /*********************************/
 
-/*覆盖antDesign样式*/
+/*覆盖第三方插件样式*/
+/*右键**********************************/
+.react-contextmenu-item:hover div{
+    color:${allColor[name]['font_color_10']}!important;
+}
+
+/*antdesign****************************/
 a:hover{
     color:${allColor[name]['font_color_10']}!important;
 }
+
+/*porpver prompt 提示框*/
+.confirm_box .ant-popover-inner{
+    background-color:${allColor[name]['bg_color_14']} !important; /*co_bg_rightclick_dialog*/
+    
+}
+.confirm_box .ant-popover-message{
+
+    color:${allColor[name]['font_color_11']} !important;/*co_font_modal_content*/
+}
+.confirm_box .ant-popover-inner-content{
+    color:${allColor[name]['font_color_11']}!important;
+}
+
 
 /*表格*/
 .ant-table-thead{
@@ -357,9 +381,9 @@ a:hover{
 .ant-select-dropdown-menu-item:hover,
 .ant-select-dropdown-menu-item-selected,
 .ant-select-dropdown-menu-item-active{
-    /* border-radius: 2px; */
-    background:${allColor[name]['bg_color_32']}!important;
-    /* color:#FFFFFF !important; */
+    border-radius: 2px; 
+    background:${allColor[name]['bg_color_32_hover']}!important;
+    color:${allColor[name]['font_color_10']}!important;
 }
 .ant-select-selection__placeholder,
 .ant-select-search__field__placeholder{
